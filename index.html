@@ -2,10 +2,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Loja de Mangá</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Mangás</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <style>
+    <link rel="stylesheet" href="./main.css">
+        <style>
         .carousel-imagens-usadas img {
             height: 500px;
             padding: 10px;
@@ -13,57 +18,130 @@
     </style>
 </head>
 <body>
-    <div class="container carousel-imagens-usadas">
+    <header>
+        <div>
+            <a href="./index.html" title="Visite a página inicial">
+                <h2>Título do Site</h2>
+            </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobreALoja">Sobre a Loja</a>
+                </li>
+                <li>
+                    <a href="#maisVendidos">Mais Vendidos</a>
+                </li>
+                <li>
+                    <a href="#destaques">Destaques</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div class="container carousel-imagens-usadas" id="carousel">
         <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="2000" class="carousel-item active">
-                    <img src="./imagens/0611731390658-web-tete.jpg" />
+                    <img src="https://via.placeholder.com/250x250" />
                 </div>
                 <div data-bs-interval="2000" class="carousel-item">
-                    <img src="./imagens/336a44da23d5c9c7868c60ecf1f7e596-1501342654.jpg" />
+                    <img src="https://via.placeholder.com/250x250" />
                 </div>
                 <div data-bs-interval="2000" class="carousel-item">
-                    <img src="./imagens/870x489_080_hl_rmilani_1589135.jpg" />
+                    <img src="https://via.placeholder.com/250x250" />
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container mt-4">
-        <div class="card-header">
-            <h2>Produtos</h2>
+<section class="continuando">
+    <div class="titulo" id="sobreALoja"><h3>Sobre a Loja</h3></div>
+    <div>
+        <img src="https://via.placeholder.com/250x250" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, totam quidem, dolorum provident sed voluptatem eligendi expedita necessitatibus itaque sequi minima accusamus aut quia nisi praesentium minus doloremque! Fugit, in.</p>
+    </div>
+</section>
+<section class="continuando">
+    <div class="titulo" id="maisVendidos"><h3>Mais Vendidos</h3></div>
+    <div>
+        <img src="https://via.placeholder.com/250x250" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, totam quidem, dolorum provident sed voluptatem eligendi expedita necessitatibus itaque sequi minima accusamus aut quia nisi praesentium minus doloremque! Fugit, in.</p>
+    </div>
+</section>
+<section class="continuando">
+    <div class="titulo" id="destaques"><h3>Destaques</h3></div>
+    <div>
+        <div class="mt-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card">
+                        <h6 class="card-title">Nome</h6>
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h6 class="card-title">Nome</h6>
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h6 class="card-title">Nome</h6>
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col">
-                <div class="card">
-                    <h6 class="card-title">Mangá</h6>
-                    <img src="https://via.placeholder.com/250x250" class="card-img-top" />
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+</section>
+    <div class="row">
+        <div class="col">
+            <section class="continuando" id="contato">
+                <div class="titulo"><h4>Entre Em Contato</h4></div>
+                <form>
+                    <div class="form-campo mt-2">
+                        <label class="form-label" for="nome">Nome:</label>
+                        <input class="form-control-sm" type="text" id="nome" name="nome">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <h6 class="card-title">Mangá</h6>
-                    <img src="https://via.placeholder.com/250x250" class="card-img-top" />
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div class="form-campo mt-2">
+                        <label class="form-label" for="telefone">Telefone:</label>
+                        <input class="form-control-sm" type="tel" id="telefone" name="telefone">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <h6 class="card-title">Mangá</h6>
-                    <img src="https://via.placeholder.com/250x250" class="card-img-top" />
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div class="form-campo mt-2">
+                        <label class="form-label" for="email">E-mail:</label>
+                        <input class="form-control-sm" type="email" id="email" name="email">
                     </div>
-                </div>
-            </div>
+                    <div class="form-campo mt-2">
+                        <label class="form-label" for="mensagem">Mensagem:</label>
+                        <input class="form-control-lg" id="mensagem" name="mensagem"></input>
+                    </div>
+                    <button class="btn btn-success mt-2" type="submit">Enviar</button>
+                </form>
+            </section>
         </div>
     </div>
 
     <script src="./bootstrap.bundle.min.js"></script>
 </body>
+<footer>
+    <div class="rodape">
+        <img class="imagemRodape" src="https://via.placeholder.com/60x60" />
+            &copy; Nome da Loja - Todos os direitos reservados - 2023
+    </div>
+</div>
+</footer>
 </html>
